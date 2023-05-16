@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    html {
+        font-family: 'Nunito';
+        @apply bg-black text-white;
+    }
+
+    h1 {
+        @apply text-2xl font-semibold;
+    }
+
+    h2 {
+        @apply text-xl font-semibold;
+    }
+
+    h3 {
+        @apply text-lg font-semibold;
+    }
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url("/Nunito-VariableFont_wght.ttf");
+}
