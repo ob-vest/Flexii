@@ -5,7 +5,7 @@
 @layer components {
     html {
         font-family: 'Nunito';
-        @apply bg-black text-white;
+        @apply bg-black text-white p-5;
     }
 
     h1 {
