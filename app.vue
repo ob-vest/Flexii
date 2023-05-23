@@ -7,7 +7,14 @@
     />
     <div>
       <!-- <Homepage class="px-5" /> -->
-      <CategoryList />
+      <!-- <CategoryList /> -->
+      <ClaimPage
+        title="Spotify"
+        img="spotify.svg"
+        description="
+        Claim 1 måneds GRATIS Spotify Premium subscription ved at aktivere denne kupon. Brug Spotify til at streame dine yndlingsartisters sange on demand!
+        "
+      />
       <TabBar class="pt-24" />
     </div>
   </div>
