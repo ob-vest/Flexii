@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :class="class" class="h-7 w-7 rounded-full items-center flex mt-2">
+    <div :class="class" class="h-7 w-7 rounded-full items-center flex">
       <img
         class="p-2 h-full w-full object-contain"
         src="/icons/chevron-right.svg"
