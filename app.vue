@@ -6,7 +6,8 @@
       @toggle-pop-up="togglePopUp"
     />
     <div>
-      <Homepage class="px-5" />
+      <!-- <Homepage class="px-5" /> -->
+      <CategoryList />
       <TabBar class="pt-24" />
     </div>
   </div>

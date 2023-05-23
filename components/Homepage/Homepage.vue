@@ -1,9 +1,9 @@
 <template>
   <div class="scroll-overflow-y">
     <div class="flex py-5">
-      <img src="~/assets/emma.svg" alt="" />
+      <img src="/emma.svg" alt="" />
       <div class="w-full flex justify-center">
-        <img src="~/assets/flexii-logo.svg" alt="" />
+        <img src="/flexii-logo.svg" alt="" />
       </div>
     </div>
 
@@ -26,3 +26,14 @@
     </div>
   </div>
 </template>
+
+<script>
+import CategoryBox from "./CategoryBox.vue";
+import PopularClaimButton from "./PopularClaimButton.vue";
+export default {
+  components: {
+    CategoryBox,
+    PopularClaimButton,
+  },
+};
+</script>
