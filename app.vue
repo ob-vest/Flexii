@@ -1,8 +1,28 @@
 <template>
   <div>
-    <!-- <Homepage /> -->
-    <TabBar />
+    <PopUpBox
+      v-if="isOpen == true"
+      :is-open="isOpen"
+      @toggle-pop-up="togglePopUp"
+    />
+    <div>
+      <Homepage class="px-5" />
+      <TabBar class="pt-24" />
+    </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {
+    togglePopUp() {
+      this.isOpen = !this.isOpen;
+    },
+  },
+};
+</script>

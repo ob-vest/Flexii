@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="bg-stone-950 w-full fixed bottom-0 py-4 px-5">
-      <div class="flex justify-between">
+    <nav class="bg-stone-900 w-full fixed bottom-0 h-20 px-5 rounded-t-2xl">
+      <div class="flex justify-between my-5">
         <img src="~/assets/icons/home.svg" alt="" />
         <img src="~/assets/icons/offers.svg" alt="" />
         <div
