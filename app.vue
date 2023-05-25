@@ -7,15 +7,6 @@
     />
     <div>
       <!-- <CommunityList /> -->
-      <!-- <Homepage class="px-5" /> -->
-      <!-- <CategoryList /> -->
-      <!-- <ClaimPage
-        title="Spotify"
-        img="spotify.svg"
-        description="
-        Claim 1 måneds GRATIS Spotify Premium subscription ved at aktivere denne kupon. Brug Spotify til at streame dine yndlingsartisters sange on demand!
-        "
-      /> -->
       <NuxtPage />
       <TabBar class="pt-24" />
     </div>
