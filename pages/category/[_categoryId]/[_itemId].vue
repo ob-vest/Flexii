@@ -2,9 +2,9 @@
   <div>
     <div class="mx-5 space-y-5">
       <BackNavBar />
-      <h1 class="text-4xl">{{ title }}</h1>
+      <h1 class="text-4xl">{{ item.title }}</h1>
       <div class="flex justify-center">
-        <img class="w-48" :src="'/illustrations/' + img" alt="" />
+        <img class="w-48" :src="'/illustrations/' + item.image" alt="" />
       </div>
 
       <div class="mx-5 space-y-5">
@@ -17,7 +17,7 @@
         </div>
 
         <p class="text-white text-opacity-60">
-          {{ description }}
+          {{ item.text }}
         </p>
         <p class="text-white text-opacity-80">
           Prisen for denne kupon er 150 point.
@@ -31,11 +31,28 @@
 </template>
 
 <script>
+import { categories } from "~/assets/css/categories";
+
 export default {
-  props: {
-    title: String,
-    img: String,
-    description: String,
+  data() {
+    return {
+      item: this.getItem(),
+    };
+  },
+  methods: {
+    getCategory() {
+      return categories.find(
+        (category) =>
+          category.name.toLowerCase() === this.$route.params._categoryId
+      ).items;
+    },
+    getItem() {
+      console.log(this.$route.params);
+      const items = this.getCategory();
+      return items.find(
+        (item) => item.title.toLowerCase() === this.$route.params._itemId
+      );
+    },
   },
 };
 </script>
