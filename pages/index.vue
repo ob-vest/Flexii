@@ -1,42 +1,44 @@
 <template>
   <div class="space-y-5">
-    <div class="flex pt-5">
+    <div class="flex pt-5 body-space">
       <img src="/emma.svg" alt="" />
       <div class="w-full flex justify-center">
-        <img src="/flexii-logo.svg" alt="" />
+        <img class="object-contain" src="/flexii-logo.svg" alt="" />
       </div>
     </div>
-    <div>
+    <div class="body-space">
       <h3 class="text-gray-400">Hej Emma!</h3>
       <h1 class="text-3xl">Velkommen tilbage!</h1>
     </div>
+    <div class="body-space space-y-5">
+      <h2 class="title">Nyt fra Flexii</h2>
 
-    <h2 class="title">Nyt fra Flexii</h2>
-
-    <Newsbox />
-
-    <h2 class="title">Kategorier</h2>
-    <div class="flex gap-3 overflow-x-scroll">
-      <!-- <CategoryBox title="Wellness" img="wellness.svg" />
-      <CategoryBox title="Streaming" img="streaming.svg" /> -->
-      <NuxtLink
-        v-for="(category, index) in categories"
-        :key="index"
-        :to="'/category/' + category.name.toLowerCase()"
-      >
-        <CategoryBox :title="category.name" :img="category.image" />
-      </NuxtLink>
+      <Newsbox />
+    </div>
+    <h2 class="title body-space">Kategorier</h2>
+    <div class="overflow-x-scroll">
+      <div class="body-space mb-2 flex gap-3">
+        <NuxtLink
+          v-for="(category, index) in categories"
+          :key="index"
+          :to="'/category/' + category.name.toLowerCase()"
+        >
+          <CategoryBox :title="category.name" :img="category.image" />
+        </NuxtLink>
+      </div>
     </div>
 
-    <div class="flex justify-between my-2">
+    <div class="flex justify-between my-2 body-space">
       <h2 class="title">Mest populære claims</h2>
       <p>Se alle</p>
     </div>
 
-    <div class="flex gap-3 overflow-x-scroll">
-      <PopularClaimButton title="Viaplay" img="viaplay.svg" />
-      <PopularClaimButton title="Spotify" img="spotify.svg" />
-      <PopularClaimButton title="Netflix" img="netflix.svg" />
+    <div class="overflow-x-scroll">
+      <div class="flex gap-3 body-space">
+        <PopularClaimButton title="Viaplay" img="viaplay.svg" />
+        <PopularClaimButton title="Spotify" img="spotify.svg" />
+        <PopularClaimButton title="Netflix" img="netflix.svg" />
+      </div>
     </div>
   </div>
 </template>

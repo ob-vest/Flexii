@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+    .body-space { 
+        @apply mx-5;
+    }
     html {
         font-family: 'Nunito';
         @apply bg-black text-white;

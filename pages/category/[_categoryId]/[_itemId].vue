@@ -8,9 +8,9 @@
       </div>
 
       <div class="mx-5 space-y-5">
-        <div class="flex justify-between items-center">
+        <div class="flex items-center">
           <h2>Detaljer</h2>
-          <div class="flex items-center h-8">
+          <div class="flex items-center h-8 w-full justify-end">
             <img class="h-full" src="/icons/coin.svg" alt="" />
             <p class="text-white text-opacity-60">150 p</p>
           </div>
