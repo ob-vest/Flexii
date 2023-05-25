@@ -7,7 +7,11 @@
         <div
           class="w-16 bg-white flex justify-center items-center rounded-full"
         >
-          <img class="p-2" :src="'/icons/communities/' + image" alt="" />
+          <img
+            class="p-2"
+            :src="'/illustrations/icons/communities/' + image"
+            alt=""
+          />
         </div>
         <div class="flex flex-col justify-between w-full">
           <div class="flex justify-between w-full">
