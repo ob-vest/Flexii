@@ -1,37 +1,37 @@
 <template>
   <div>
-    <div class="pt-24">
-      <nav class="bg-stone-900 w-full fixed bottom-0 h-20 px-5 rounded-t-2xl">
-        <div class="flex justify-between items-center h-full">
-          <img class="icon" src="/illustrations/icons/home.svg" alt="" />
+    <nav
+      class="bg-stone-900 w-full fixed bottom-0 h-20 px-5 rounded-t-2xl max-w-md mx-auto"
+    >
+      <div class="flex justify-between items-center h-full">
+        <img class="icon" src="/illustrations/icons/home.svg" alt="" />
+        <img
+          class="icon notselected"
+          src="/illustrations/icons/community.svg"
+          alt=""
+        />
+        <div
+          class="bg-primary p-2 rounded-full shadow-[0_4px_35px_-5px_rgba(0,0,0,0.3)] shadow-primary"
+        >
           <img
-            class="icon notselected"
-            src="/illustrations/icons/community.svg"
-            alt=""
-          />
-          <div
-            class="bg-primary p-2 rounded-full shadow-[0_4px_35px_-5px_rgba(0,0,0,0.3)] shadow-primary"
-          >
-            <img
-              class="h-10 w-10"
-              src="/illustrations/icons/joystick.svg"
-              alt=""
-            />
-          </div>
-
-          <img
-            class="icon notselected"
-            :src="'/illustrations/icons/star.svg'"
-            alt=""
-          />
-          <img
-            class="icon notselected"
-            src="/illustrations/icons/profile.svg"
+            class="h-10 w-10"
+            src="/illustrations/icons/joystick.svg"
             alt=""
           />
         </div>
-      </nav>
-    </div>
+
+        <img
+          class="icon notselected"
+          :src="'/illustrations/icons/star.svg'"
+          alt=""
+        />
+        <img
+          class="icon notselected"
+          src="/illustrations/icons/profile.svg"
+          alt=""
+        />
+      </div>
+    </nav>
   </div>
 </template>
 

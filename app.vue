@@ -8,7 +8,7 @@
     <div>
       <!-- <CommunityList /> -->
       <NuxtPage />
-      <TabBar />
+      <TabBar class="pt-24" />
     </div>
   </div>
 </template>
