@@ -6,8 +6,8 @@
       @toggle-pop-up="togglePopUp"
     />
     <div>
-      <CommunityList />
-      <!-- <Homepage class="px-5" /> -->
+      <!-- <CommunityList /> -->
+      <Homepage class="px-5" />
       <!-- <CategoryList /> -->
       <!-- <ClaimPage
         title="Spotify"

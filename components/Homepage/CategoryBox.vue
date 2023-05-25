@@ -1,13 +1,14 @@
 <template>
-  <div
-    class="bg-primary w-26 h-40 rounded-3xl justify-end items-center flex flex-col p-2"
-  >
-    <img
-      class="h-full px-6 object-contain"
-      src="~/assets/illustrations/wellness.svg"
-      alt=""
-    />
-    <h3 class="text-black font-bold">Wellness</h3>
-    <ContinueButton class="bg-white" />
+  <div>
+    <div class="bg-white w-32 p-2 h-40 rounded-3xl">
+      <div class="flex flex-col space-y-2 justify-center h-full w-full">
+        <img
+          class="w-full px-3 object-contain"
+          src="/illustrations/wellness.svg"
+          alt=""
+        />
+        <h3 class="text-black text-xl font-extrabold text-center">Wellness</h3>
+      </div>
+    </div>
   </div>
 </template>
