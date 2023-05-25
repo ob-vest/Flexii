@@ -41,16 +41,16 @@ export default {
   },
   methods: {
     getCategory() {
+      const route = useRoute();
       return categories.find(
-        (category) =>
-          category.name.toLowerCase() === this.$route.params._categoryId
+        (category) => category.name.toLowerCase() === route.params._categoryId
       ).items;
     },
     getItem() {
-      console.log(this.$route.params);
+      const route = useRoute();
       const items = this.getCategory();
       return items.find(
-        (item) => item.title.toLowerCase() === this.$route.params._itemId
+        (item) => item.title.toLowerCase() === route.params._itemId
       );
     },
   },

@@ -11,7 +11,7 @@
             <img class="h-10 w-10" src="/icons/joystick.svg" alt="" />
           </div>
 
-          <img class="icon notselected" src="/icons/star.svg" alt="" />
+          <img class="icon notselected" :src="'/icons/star.svg'" alt="" />
           <img class="icon notselected" src="/icons/profile.svg" alt="" />
         </div>
       </nav>

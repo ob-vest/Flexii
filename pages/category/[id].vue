@@ -14,7 +14,9 @@
     </h1>
     <div>
       <div v-for="item in category.items" :key="item.title">
-        <NuxtLink :to="this.$route.params.id + '/' + item.title.toLowerCase()">
+        <NuxtLink
+          :to="category.name.toLowerCase() + '/' + item.title.toLowerCase()"
+        >
           <CategoryListBox :image="item.image" :title="item.title" />
         </NuxtLink>
       </div>
@@ -38,8 +40,9 @@ export default {
   },
   methods: {
     getCategory() {
+      const route = useRoute();
       return categories.find(
-        (category) => category.name.toLowerCase() === this.$route.params.id
+        (category) => category.name.toLowerCase() === route.params.id
       );
     },
   },
