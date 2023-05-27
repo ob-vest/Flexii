@@ -6,6 +6,7 @@
       @toggle-pop-up="togglePopUp"
     />
     <div>
+      <!-- <Chat /> -->
       <!-- <CommunityList /> -->
       <NuxtPage />
       <TabBar class="pt-24" />

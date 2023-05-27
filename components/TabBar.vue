@@ -1,3 +1,5 @@
+import { NuxtLink } from '~/.nuxt/components';
+
 <template>
   <div>
     <nav
@@ -5,11 +7,14 @@
     >
       <div class="flex justify-between items-center h-full">
         <img class="icon" src="/illustrations/icons/home.svg" alt="" />
-        <img
-          class="icon notselected"
-          src="/illustrations/icons/community.svg"
-          alt=""
-        />
+        <NuxtLink to="/community">
+          <img
+            class="icon notselected"
+            src="/illustrations/icons/community.svg"
+            alt=""
+          />
+        </NuxtLink>
+
         <div
           class="bg-primary p-2 rounded-full shadow-[0_4px_35px_-5px_rgba(0,0,0,0.3)] shadow-primary"
         >

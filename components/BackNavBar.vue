@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="py-5 flex justify-between items-center">
+    <div class="py-2 flex justify-between items-center">
       <div
         @click="goBack()"
         class="my-5 bg-white w-10 rounded-2xl p-3 flex justify-center"
