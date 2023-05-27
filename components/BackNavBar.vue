@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="py-5 flex justify-between items-center">
-      <div class="my-5 bg-white w-10 rounded-2xl p-3 flex justify-center">
+      <div
+        @click="goBack()"
+        class="my-5 bg-white w-10 rounded-2xl p-3 flex justify-center"
+      >
         <img
           class="rotate-180"
           src="/illustrations/icons/chevron-right.svg"
@@ -14,3 +17,14 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    goBack() {
+      const route = useRouter();
+      console.log("goingBack");
+      route.go(-1);
+    },
+  },
+};
+</script>

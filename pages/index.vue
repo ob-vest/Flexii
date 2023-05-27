@@ -35,9 +35,46 @@
 
     <div class="overflow-x-scroll">
       <div class="flex gap-3 body-space">
-        <PopularClaimButton title="Viaplay" img="viaplay.svg" />
-        <PopularClaimButton title="Spotify" img="spotify.svg" />
-        <PopularClaimButton title="Netflix" img="netflix.svg" />
+        <NuxtLink
+          :to="
+            '/category/' +
+            categories[1].name.toLowerCase() +
+            '/' +
+            categories[1].items[0].title.toLowerCase()
+          "
+        >
+          <PopularClaimButton
+            :title="categories[1].items[0].title"
+            :img="categories[1].items[0].image"
+          />
+        </NuxtLink>
+
+        <NuxtLink
+          :to="
+            '/category/' +
+            categories[1].name.toLowerCase() +
+            '/' +
+            categories[1].items[1].title.toLowerCase()
+          "
+        >
+          <PopularClaimButton
+            :title="categories[1].items[1].title"
+            :img="categories[1].items[1].image"
+          />
+        </NuxtLink>
+        <NuxtLink
+          :to="
+            '/category/' +
+            categories[1].name.toLowerCase() +
+            '/' +
+            categories[1].items[3].title.toLowerCase()
+          "
+        >
+          <PopularClaimButton
+            :title="categories[1].items[3].title"
+            :img="categories[1].items[3].image"
+          />
+        </NuxtLink>
       </div>
     </div>
   </div>
