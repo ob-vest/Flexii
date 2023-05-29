@@ -25,23 +25,25 @@ import { NuxtLink } from '~/.nuxt/components';
             alt=""
           />
         </NuxtLink>
-
-        <div
-          class="bg-primary p-2 rounded-full shadow-[0_4px_35px_-5px_rgba(0,0,0,0.3)] shadow-primary"
-        >
+        <NuxtLink to="/game">
+          <div
+            class="bg-primary p-2 rounded-full shadow-[0_4px_35px_-5px_rgba(0,0,0,0.3)] shadow-primary"
+          >
+            <img
+              class="h-10 w-10"
+              src="/illustrations/icons/joystick.svg"
+              alt=""
+            />
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/favorites">
           <img
-            class="h-10 w-10"
-            src="/illustrations/icons/joystick.svg"
+            class="icon notselected"
+            :class="{ selected: $route.path === '/favorites' }"
+            :src="'/illustrations/icons/star.svg'"
             alt=""
           />
-        </div>
-
-        <img
-          class="icon notselected"
-          :class="{ selected: $route.path === '/favorites' }"
-          :src="'/illustrations/icons/star.svg'"
-          alt=""
-        />
+        </NuxtLink>
         <NuxtLink to="/profile">
           <img
             class="icon notselected"

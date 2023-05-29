@@ -30,7 +30,6 @@
 
     <div class="flex justify-between my-2 body-space">
       <h2 class="title">Mest populære claims</h2>
-      <p>Se alle</p>
     </div>
 
     <div class="overflow-x-scroll">

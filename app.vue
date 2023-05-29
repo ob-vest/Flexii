@@ -9,6 +9,7 @@
       <!-- <Chat /> -->
       <!-- <CommunityList /> -->
       <!-- <profile /> -->
+      <!-- <game /> -->
       <NuxtPage />
       <TabBar class="pt-24" />
     </div>

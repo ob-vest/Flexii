@@ -17,7 +17,7 @@
       </div>
 
       <div class="flex gap-4 h-16 bg-yellow-600 p-2 px-5 rounded-xl">
-        <div class="flex flex-col justify-between">
+        <div class="flex flex-col justify-between w-24 items-center">
           <p>Dine point</p>
           <div class="flex h-5 items-center">
             <img
@@ -29,9 +29,16 @@
           </div>
         </div>
         <hr class="border-[0.5px] border-white border-opacity-30 h-full" />
-        <div>
-          <p>Dine point</p>
-          <p>2.256</p>
+        <div class="flex flex-col justify-between w-24 items-center">
+          <p>Brugte point</p>
+          <div class="flex h-5 items-center">
+            <img
+              class="h-full object-contain"
+              src="/illustrations/icons/coin.svg"
+              alt=""
+            />
+            <p>20.556</p>
+          </div>
         </div>
       </div>
       <div class="space-y-4 pt-5 w-full">
@@ -40,12 +47,9 @@
           img="ticketdiscount.svg"
         />
         <ProfileListItem title="Dit mobilabonnement" img="phone.svg" />
-        <ProfileListItem title="Dit mobilabonnement" img="affiliate.svg" />
-        <ProfileListItem title="Dit mobilabonnement" img="settings.svg" />
-        <ProfileListItem
-          title="Dit mobilabonnement"
-          img="messagequestion.svg"
-        />
+        <ProfileListItem title="Affiliate portal" img="affiliate.svg" />
+        <ProfileListItem title="Indstillinger" img="settings.svg" />
+        <ProfileListItem title="Kundesupport" img="messagequestion.svg" />
       </div>
     </div>
   </div>
